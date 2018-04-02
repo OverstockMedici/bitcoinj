@@ -1,6 +1,7 @@
 /*
  * Copyright 2013 Google Inc.
  * Copyright 2015 Andreas Schildbach
+ * Copyright 2018 Medici Ventures
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +39,7 @@ public class FloMainNetParams extends AbstractBitcoinNetParams {
         super();
 
         /**
-           Begin section modified for FLO, believed to be correct.
+           Begin section modified for FLO.
         **/
         id = ID_FLO_MAINNET;
 
