@@ -21,7 +21,7 @@
 
   <groupId>org.bitcoinj</groupId>
   <artifactId>bitcoinj-parent</artifactId>
-  <version>0.16f-SNAPSHOT</version>
+  <version>0.15.med.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -74,12 +74,16 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <uniqueVersion>true</uniqueVersion>
+      <id>medici.snapshot.repo</id>
+      <name>Medici Snapshot Repository</name>
+      <url>http://nexus.aws:2345/repository/medici-snapshots/</url>
     </snapshotRepository>
     <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <uniqueVersion>false</uniqueVersion>
+      <id>medici.release.repo</id>
+      <name>Medici Releases</name>
+      <url>http://nexus.aws:2345/repository/medici-releases</url>
     </repository>
   </distributionManagement>
 
